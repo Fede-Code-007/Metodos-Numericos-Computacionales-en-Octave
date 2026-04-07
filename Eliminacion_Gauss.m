@@ -27,11 +27,13 @@ end
 
 M = [A b]; % Matriz aumentada.
 
+printf("\nMatriz M:\n\n");
+disp(M);
 
 % METODO ELIMINACIÓN GAUSS
 
 for i = 1:n-1
-
+    printf("\nPaso %d:\n", i);
     %Buscamos un pivot distinto de 0.
     pivot = i;
     while pivot <= n && M(pivot,i) == 0
@@ -56,6 +58,9 @@ for i = 1:n-1
         m = M(j,i) / M(i,i);
         M(j,:) = M(j,:) - m * M(i,:);
     end
+
+    disp(M);
+    disp("");
 end
 
 
@@ -65,7 +70,7 @@ if M(n,n) == 0 %Una ecuacion se ha anulado por completo entonces el rango de la 
 end
 
 
-% Una vez hecha la eliminación de Gauss, realizamos sustitucion inversa para hallar los valores de las incognitas:
+% ELIMINACIÓN INVERSA
 
 
 %Inicializamos el vector de resultados:

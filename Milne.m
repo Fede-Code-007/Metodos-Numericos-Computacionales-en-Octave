@@ -3,7 +3,7 @@ clear;
 
 % Ingreso de valores iniciales:
 
-funcion = input('Ingrese la funcion f(x,y): ','s');
+funcion = input('Ingrese la funcion diferencial f(x,y): ','s');
 
 f = str2func(['@(x,y) ' funcion]);
 
