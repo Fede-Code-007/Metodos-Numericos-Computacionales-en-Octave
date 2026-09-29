@@ -16,7 +16,7 @@ Implementaciones de métodos para encontrar raíces de funciones:
 
 * **Bisección** — `Biseccion.m`
 * **Newton-Raphson** — `Newton_Raphson.m`
-* **Comparación de métodos de raíces** — `Comparacion_Metodos_Raices.m`
+* **Comparación del método de Newton-Raphson y Regula Falsi** — `Comparacion_Metodos_Raices.m`
 
 ### 🧮 Resolución de sistemas de ecuaciones
 
@@ -89,7 +89,8 @@ No se utilizan librerías externas. Las implementaciones fueron desarrolladas ut
 ├── SimpsonCombinado.m
 ├── SimpsonTresOctavos.m
 ├── SimpsonUnTercio.m
-└── Trapecios.m
+├── Trapecios.m
+└── README.md
 ```
 
 ## Ejecución
